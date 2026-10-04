@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- ==========================================================
+       DUDS COFFEE — Halaman CHECKOUT (checkout.html)
+       Layout dua kolom: form pelanggan + ringkasan pesanan.
+       ========================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — DUDS Coffee Padang</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER & NAVBAR ========== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigasi utama">
+      <a href="index.html" class="logo">
+        <span class="logo-cup" aria-hidden="true"></span>
+        DUDS
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="cart.html" class="nav-cart">🛒 Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== PAGE HEAD ========== -->
+    <section class="page-head">
+      <div class="container">
+        <h1>Checkout</h1>
+        <p>Lengkapi data pesananmu untuk menyelesaikan pemesanan.</p>
+        <div class="breadcrumb">Home &nbsp;/&nbsp; Cart &nbsp;/&nbsp; Checkout</div>
+      </div>
+    </section>
+
+    <!-- ========== ISI CHECKOUT ========== -->
+    <section class="section container">
+      <div class="checkout-layout">
+
+        <!-- ----- KOLOM KIRI: FORM PELANGGAN & PEMBAYARAN ----- -->
+        <form class="panel" onsubmit="return false;">
+
+          <!-- Bagian: CUSTOMER INFORMATION -->
+          <h2>Customer Information</h2>
+
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Nama lengkap" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="08xx-xxxx-xxxx" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="table">Table Number</label>
+            <input type="text" id="table" name="table" placeholder="Contoh: 05">
+          </div>
+
+          <!-- Bagian: ORDER TYPE (radio) -->
+          <h3 class="form-section-title">Order Type</h3>
+          <div class="radio-grid">
+            <label class="radio-card">
+              <span class="r-icon" aria-hidden="true">🍽️</span>
+              <input type="radio" name="order-type" value="dine-in" checked>
+              <span>
+                <strong>Dine In</strong>
+                <span class="small">Makan di tempat</span>
+              </span>
+            </label>
+
+            <label class="radio-card">
+              <span class="r-icon" aria-hidden="true">🥡</span>
+              <input type="radio" name="order-type" value="take-away">
+              <span>
+                <strong>Take Away</strong>
+                <span class="small">Dibawa pulang</span>
+              </span>
+            </label>
+          </div>
+
+          <!-- Bagian: PAYMENT METHOD (radio) -->
+          <h3 class="form-section-title">Payment Method</h3>
+          <div class="radio-grid">
+            <label class="radio-card">
+              <span class="r-icon" aria-hidden="true">💵</span>
+              <input type="radio" name="payment" value="cash">
+              <span>
+                <strong>Cash</strong>
+                <span class="small">Bayar tunai</span>
+              </span>
+            </label>
+
+            <label class="radio-card">
+              <span class="r-icon" aria-hidden="true">📱</span>
+              <input type="radio" name="payment" value="qris" checked>
+              <span>
+                <strong>QRIS</strong>
+                <span class="small">Scan QR code</span>
+              </span>
+            </label>
+
+            <label class="radio-card">
+              <span class="r-icon" aria-hidden="true">🏦</span>
+              <input type="radio" name="payment" value="bank">
+              <span>
+                <strong>Bank Transfer</strong>
+                <span class="small">Transfer antar bank</span>
+              </span>
+            </label>
+          </div>
+
+        </form>
+
+        <!-- ----- KOLOM KANAN: ORDER SUMMARY ----- -->
+        <aside class="panel">
+          <h2>Order Summary</h2>
+
+          <!-- Daftar item -->
+          <div class="checkout-item">
+            <span>Cafe Latte x2</span>
+            <span>Rp40.000</span>
+          </div>
+          <div class="checkout-item">
+            <span>Americano x1</span>
+            <span>Rp18.000</span>
+          </div>
+          <div class="checkout-item">
+            <span>Discount</span>
+            <span>-Rp5.000</span>
+          </div>
+
+          <!-- Total besar -->
+          <div class="checkout-total">
+            <span class="label">Total</span>
+            <span class="value">Rp53.000</span>
+          </div>
+
+          <!-- Tombol tempat pesanan (menuju halaman payment) -->
+          <a href="payment.html" class="btn btn-primary btn-block">Place Order</a>
+          <a href="cart.html" class="btn btn-outline btn-block">Back to Cart</a>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-cup" aria-hidden="true"></span>
+            DUDS
+          </a>
+          <p>Brew. Chill. Repeat. — Coffee shop modern di Padang, Sumatera Barat.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>📍 Padang, Sumatera Barat</li>
+            <li>🕐 08.00–22.00</li>
+            <li>📞 08xx-xxxx-xxxx</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 DUDS Coffee — Padang, Sumatera Barat. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

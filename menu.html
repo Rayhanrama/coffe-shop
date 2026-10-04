@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- ==========================================================
+       DUDS COFFEE â€” Halaman MENU (menu.html)
+       Katalog makanan & minuman dalam bentuk product card.
+       ========================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menu kopi, non-coffee, dan makanan DUDS Coffee Padang.">
+  <title>Menu â€” DUDS Coffee Padang</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER & NAVBAR (sama seperti halaman lain) ========== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigasi utama">
+      <a href="index.html" class="logo">
+        <span class="logo-cup" aria-hidden="true"></span>
+        DUDS
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <!-- Menu aktif -->
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="cart.html" class="nav-cart">ðŸ›’ Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== PAGE HEAD (banner halaman) ========== -->
+    <section class="page-head">
+      <div class="container">
+        <h1>Our Menu</h1>
+        <p>Pilih dari berbagai pilihan coffee, non-coffee, dan makanan favoritmu.</p>
+        <div class="breadcrumb">Home &nbsp;/&nbsp; Menu</div>
+      </div>
+    </section>
+
+    <!-- ========== KATALOG MENU ========== -->
+    <section class="section container">
+
+      <!-- Pil kategori (tampilan visual, mengarah ke bagian masing-masing) -->
+      <div class="category-pills">
+        <a href="#coffee" class="pill">Coffee</a>
+        <a href="#non-coffee" class="pill">Non-Coffee</a>
+        <a href="#food" class="pill">Food</a>
+      </div>
+
+      <!-- ---------------- KATEGORI: COFFEE ---------------- -->
+      <h2 class="category-title" id="coffee">â˜• Coffee</h2>
+      <div class="product-grid">
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80" alt="Cafe Latte">
+          <div class="product-body">
+            <h3>Cafe Latte</h3>
+            <p class="desc">Espresso lembut dengan steamed milk dan foam tipis.</p>
+            <div class="product-footer">
+              <span class="price">Rp20.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1551030173-122aabc4489c?auto=format&fit=crop&w=600&q=80" alt="Americano">
+          <div class="product-body">
+            <h3>Americano</h3>
+            <p class="desc">Espresso dengan air panas, kuat dan menyegarkan.</p>
+            <div class="product-footer">
+              <span class="price">Rp18.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80" alt="Cappuccino">
+          <div class="product-body">
+            <h3>Cappuccino</h3>
+            <p class="desc">Espresso, susu, dan foam tebal dengan taburan bubuk.</p>
+            <div class="product-footer">
+              <span class="price">Rp22.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&q=80" alt="Caramel Macchiato">
+          <div class="product-body">
+            <h3>Caramel Macchiato</h3>
+            <p class="desc">Vanilla, espresso, dan caramel manis di atasnya.</p>
+            <div class="product-footer">
+              <span class="price">Rp25.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80" alt="Mocha">
+          <div class="product-body">
+            <h3>Mocha</h3>
+            <p class="desc">Kombinasi espresso, cokelat, dan susu yang kaya rasa.</p>
+            <div class="product-footer">
+              <span class="price">Rp23.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=600&q=80" alt="Espresso">
+          <div class="product-body">
+            <h3>Espresso</h3>
+            <p class="desc">Shot kopi pekat dengan crema keemasan di atasnya.</p>
+            <div class="product-footer">
+              <span class="price">Rp18.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ---------------- KATEGORI: NON-COFFEE ---------------- -->
+      <h2 class="category-title" id="non-coffee">ðŸ¥¤ Non-Coffee</h2>
+      <div class="product-grid">
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=600&q=80" alt="Matcha Latte">
+          <div class="product-body">
+            <h3>Matcha Latte</h3>
+            <p class="desc">Matcha Jepang premium dipadukan susu segar.</p>
+            <div class="product-footer">
+              <span class="price">Rp22.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=600&q=80" alt="Chocolate">
+          <div class="product-body">
+            <h3>Chocolate</h3>
+            <p class="desc">Cokelat premium hangat dengan susu yang creamy.</p>
+            <div class="product-footer">
+              <span class="price">Rp20.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1558857563-b371033873b8?auto=format&fit=crop&w=600&q=80" alt="Taro Latte">
+          <div class="product-body">
+            <h3>Taro Latte</h3>
+            <p class="desc">Taro lembut berpadu susu, manis dan menenangkan.</p>
+            <div class="product-footer">
+              <span class="price">Rp21.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1553787499-6f9133860278?auto=format&fit=crop&w=600&q=80" alt="Strawberry Milk">
+          <div class="product-body">
+            <h3>Strawberry Milk</h3>
+            <p class="desc">Susu segar dengan rasa stroberi manis yang segar.</p>
+            <div class="product-footer">
+              <span class="price">Rp22.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ---------------- KATEGORI: FOOD ---------------- -->
+      <h2 class="category-title" id="food">ðŸ¥ Food</h2>
+      <div class="product-grid">
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Croissant">
+          <div class="product-body">
+            <h3>Croissant</h3>
+            <p class="desc">Croissant mentega panggang, renyah di luar lembut di dalam.</p>
+            <div class="product-footer">
+              <span class="price">Rp18.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" alt="French Fries">
+          <div class="product-body">
+            <h3>French Fries</h3>
+            <p class="desc">Kentang goreng crispy dengan saus favoritmu.</p>
+            <div class="product-footer">
+              <span class="price">Rp17.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1521390188846-e2a3a97453a0?auto=format&fit=crop&w=600&q=80" alt="Chicken Sandwich">
+          <div class="product-body">
+            <h3>Chicken Sandwich</h3>
+            <p class="desc">Ayam panggang dengan sayuran segar di dalam roti lembut.</p>
+            <div class="product-footer">
+              <span class="price">Rp25.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80" alt="Donut">
+          <div class="product-body">
+            <h3>Donut</h3>
+            <p class="desc">Donut lembut dengan glazur manis dan topping warna-warni.</p>
+            <div class="product-footer">
+              <span class="price">Rp12.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER (sama seperti halaman lain) ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-cup" aria-hidden="true"></span>
+            DUDS
+          </a>
+          <p>Brew. Chill. Repeat. â€” Coffee shop modern di Padang, Sumatera Barat.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>ðŸ“ Padang, Sumatera Barat</li>
+            <li>ðŸ• 08.00â€“22.00</li>
+            <li>ðŸ“ž 08xx-xxxx-xxxx</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 DUDS Coffee â€” Padang, Sumatera Barat. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

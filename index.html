@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- ==========================================================
+       DUDS COFFEE â€” Halaman HOME (index.html)
+       Coffee Shop Ordering System | Padang, Sumatera Barat
+       Dibuat dengan HTML5 + CSS3 dasar (tanpa JavaScript)
+       ========================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DUDS Coffee Padang - Brew. Chill. Repeat. Pesan kopi favoritmu secara online.">
+  <title>DUDS Coffee â€” Brew. Chill. Repeat.</title>
+  <!-- Menghubungkan ke satu file CSS untuk seluruh halaman -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER & NAVBAR
+       Konsisten di semua halaman. Berisi logo dan menu navigasi.
+       ============================================================ -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigasi utama">
+      <!-- Logo DUDS + ikon cangkir (dibuat dengan CSS) -->
+      <a href="index.html" class="logo">
+        <span class="logo-cup" aria-hidden="true"></span>
+        DUDS
+      </a>
+
+      <ul class="nav-links">
+        <!-- class "active" menandai halaman yang sedang dibuka -->
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cart.html" class="nav-cart">ðŸ›’ Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+         Judul utama, deskripsi, tombol, dan gambar kopi besar.
+         ============================================================ -->
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <span class="eyebrow">Padang â€¢ Sumatera Barat</span>
+        <h1 id="hero-title">Good Coffee,<br>Good Mood.</h1>
+        <p>Temukan kopi favoritmu dan nikmati suasana nyaman DUDS Coffee di Padang.</p>
+
+        <!-- Tombol mengarah ke halaman menu -->
+        <div class="hero-actions">
+          <a href="menu.html" class="btn btn-primary">Order Now</a>
+          <a href="#about" class="btn btn-outline">Tentang Kami</a>
+        </div>
+
+        <!-- Statistik kecil (tampilan saja) -->
+        <div class="hero-stats">
+          <div>
+            <strong>15+</strong>
+            <span>Pilihan Menu</span>
+          </div>
+          <div>
+            <strong>08.00â€“22.00</strong>
+            <span>Open Daily</span>
+          </div>
+          <div>
+            <strong>4.9 â˜…</strong>
+            <span>Rating Pelanggan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gambar besar di sisi kanan hero (dari Unsplash) -->
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=80"
+          alt="Latte art di atas meja kayu di DUDS Coffee">
+        <div class="hero-badge">
+          <span>â˜•</span> Signature: Cafe Latte
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: OUR FAVORITES
+         Menampilkan 4 produk unggulan dalam bentuk kartu.
+         ============================================================ -->
+    <section class="section container" aria-labelledby="fav-title">
+      <div class="section-head">
+        <span class="eyebrow">Best Seller</span>
+        <h2 id="fav-title">Our Favorites</h2>
+        <p>Pilihan kopi dan minuman yang paling digemari di DUDS Coffee.</p>
+      </div>
+
+      <!-- Grid produk: kartu akan otomatis rapi di desktop, tablet, & mobile -->
+      <div class="product-grid">
+
+        <!-- KARTU PRODUK 1: Cafe Latte -->
+        <article class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80"
+            alt="Cafe Latte DUDS Coffee">
+          <div class="product-body">
+            <span class="tag">Coffee</span>
+            <h3>Cafe Latte</h3>
+            <p class="desc">Espresso lembut dengan steamed milk dan foam tipis yang creamy.</p>
+            <div class="product-footer">
+              <span class="price">Rp20.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- KARTU PRODUK 2: Americano -->
+        <article class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1551030173-122aabc4489c?auto=format&fit=crop&w=600&q=80"
+            alt="Americano DUDS Coffee">
+          <div class="product-body">
+            <span class="tag">Coffee</span>
+            <h3>Americano</h3>
+            <p class="desc">Espresso dengan air panas. Kuat, bersih, dan menyegarkan.</p>
+            <div class="product-footer">
+              <span class="price">Rp18.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- KARTU PRODUK 3: Caramel Macchiato -->
+        <article class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&q=80"
+            alt="Caramel Macchiato DUDS Coffee">
+          <div class="product-body">
+            <span class="tag">Coffee</span>
+            <h3>Caramel Macchiato</h3>
+            <p class="desc">Perpaduan vanilla, espresso, dan caramel manis di atasnya.</p>
+            <div class="product-footer">
+              <span class="price">Rp25.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- KARTU PRODUK 4: Matcha Latte -->
+        <article class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=600&q=80"
+            alt="Matcha Latte DUDS Coffee">
+          <div class="product-body">
+            <span class="tag">Non-Coffee</span>
+            <h3>Matcha Latte</h3>
+            <p class="desc">Matcha Jepang premium dipadukan susu segar yang lembut.</p>
+            <div class="product-footer">
+              <span class="price">Rp22.000</span>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: ABOUT DUDS
+         Deskripsi coffee shop + info lokasi (sentuhan lokal Padang).
+         ============================================================ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-text">
+          <span class="eyebrow">Tentang Kami</span>
+          <h2 id="about-title">About DUDS</h2>
+          <p>
+            DUDS Coffee adalah coffee shop yang hadir di Padang dengan konsep
+            nyaman, modern, dan santai. Kami menyajikan berbagai pilihan coffee,
+            non-coffee, dan makanan untuk menemani aktivitas sehari-hari.
+          </p>
+          <p>
+            Terinspirasi dari hangatnya suasana kota Padang, kami menghadirkan
+            ruang yang pas untuk bekerja, berkumpul, atau sekadar menikmati
+            waktu sendiri sambil menyeruput kopi favorit.
+          </p>
+          <a href="menu.html" class="btn btn-primary">Lihat Menu Lengkap</a>
+        </div>
+
+        <!-- Daftar informasi penting coffee shop -->
+        <div class="info-list">
+          <div class="info-item">
+            <span class="icon" aria-hidden="true">ðŸ“</span>
+            <div>
+              <strong>Padang, Sumatera Barat</strong>
+              <span>Jl. Kopi Senja No. 12, Padang</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon" aria-hidden="true">ðŸ•</span>
+            <div>
+              <strong>Open Daily â€” 08.00â€“22.00</strong>
+              <span>Buka setiap hari sepanjang minggu</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon" aria-hidden="true">ðŸ“ž</span>
+            <div>
+              <strong>08xx-xxxx-xxxx</strong>
+              <span>Reservasi & pemesanan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: CONTACT
+         Informasi kontak & lokasi (anchor #contact dari navbar).
+         ============================================================ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Hubungi Kami</span>
+          <h2 id="contact-title">Visit or Contact Us</h2>
+          <p>Kunjungi DUDS Coffee atau hubungi kami untuk informasi lebih lanjut.</p>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card">
+            <div class="icon" aria-hidden="true">ðŸ“</div>
+            <h3>Our Location</h3>
+            <p>Jl. Kopi Senja No. 12<br>Padang, Sumatera Barat</p>
+          </article>
+
+          <article class="contact-card">
+            <div class="icon" aria-hidden="true">ðŸ•</div>
+            <h3>Opening Hours</h3>
+            <p>Open Daily<br>08.00 â€“ 22.00 WIB</p>
+          </article>
+
+          <article class="contact-card">
+            <div class="icon" aria-hidden="true">ðŸ“ž</div>
+            <h3>Phone / WhatsApp</h3>
+            <p>08xx-xxxx-xxxx</p>
+          </article>
+
+          <article class="contact-card">
+            <div class="icon" aria-hidden="true">âœ‰ï¸</div>
+            <h3>Email</h3>
+            <p>hello@dudscoffee.id</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       Konsisten di semua halaman.
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand + tagline -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-cup" aria-hidden="true"></span>
+            DUDS
+          </a>
+          <p>Brew. Chill. Repeat. â€” Coffee shop modern di Padang, Sumatera Barat.</p>
+        </div>
+
+        <!-- Tautan navigasi -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+
+        <!-- Info kontak singkat -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>ðŸ“ Padang, Sumatera Barat</li>
+            <li>ðŸ• 08.00â€“22.00</li>
+            <li>ðŸ“ž 08xx-xxxx-xxxx</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 DUDS Coffee â€” Padang, Sumatera Barat. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
